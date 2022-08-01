@@ -1,23 +1,39 @@
 import "./App.scss";
+import FullPage, {
+  FullPageSections,
+  FullpageSection,
+  FullpageNavigation,
+  Fullpage,
+} from "@ap.cx/react-fullpage";
 
 function App() {
   return (
-    <div>
-      <div className="Intro">
-        <p>Intro</p>
-      </div>
-      <div className="About">
-        <p>About</p>
-      </div>
-      <div className="Projects-top-doll"></div>
-      <div className="Projects-bottom-doll"></div>
-      <div className="Inside-projects">
-        <p>Projects</p>
-      </div>
-      <div className="Contact">
-        <p>Contact</p>
-      </div>
-    </div>
+    <FullPage>
+      <FullPageSections>
+        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
+          <div className="FullScreen Intro">
+            <h1>Intro</h1>
+          </div>
+        </FullpageSection>
+        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
+          <div className="FullScreen About">
+            <p>About</p>
+          </div>
+        </FullpageSection>
+        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
+          <div className="Projects-top-doll"></div>
+          <div className="Projects-bottom-doll"></div>
+          <div className="FullScreen Projects">
+            <p>Projects</p>
+          </div>
+        </FullpageSection>
+        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
+          <div className="FullScreen Contact">
+            <p>Contact</p>
+          </div>
+        </FullpageSection>
+      </FullPageSections>
+    </FullPage>
   );
 }
 

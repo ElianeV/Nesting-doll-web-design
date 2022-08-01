@@ -3,12 +3,7 @@
   padding: 0;
 }
 
-.Intro {
-  width: 100vw;
-  height: 100vh;
-}
-
-.About {
+.FullScreen {
   width: 100vw;
   height: 100vh;
 }
@@ -39,30 +34,34 @@
   }
 }
 
+.Intro {
+  color: white;
+  background-image: url(./images/NestingDolls.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
 .Projects-top-doll {
   width: 100vw;
   height: 50vh;
-  background-color: black;
+  background-color: #2a187d;
   position: absolute;
-  top: 100vh;
+  top: 0vh;
   animation: 2s ease slideToTop forwards;
+  animation-delay: 1s;
 }
 .Projects-bottom-doll {
   width: 100vw;
   height: 50vh;
-  background-color: black;
+  background-color: #2a187d;
   position: absolute;
-  top: 150vh;
+  top: 50vh;
   animation: 2s ease slideToBottom forwards;
+  animation-delay: 1s;
 }
 
-.Inside-projects {
-  width: 100vw;
-  height: 100vh;
+.Projects {
   background-color: blueviolet;
-}
-
-.Contact {
-  width: 100vw;
-  height: 100vh;
 }
