@@ -5,6 +5,7 @@ import FullPage, {
   FullpageNavigation,
   Fullpage,
 } from "@ap.cx/react-fullpage";
+import BigEyebrow from "./images/BigEyebrow.png";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         <FullpageSection style={{ width: "100vw", height: "100vh" }}>
           <div className="FullScreen Intro">
             <h1>Intro</h1>
+            <div className="BigEyebrow">
+              <img src={BigEyebrow} alt="eyebrow" />
+            </div>
           </div>
         </FullpageSection>
         <FullpageSection style={{ width: "100vw", height: "100vh" }}>
