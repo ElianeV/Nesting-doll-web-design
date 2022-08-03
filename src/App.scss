@@ -10,211 +10,263 @@
 
 .Intro {
   background-color: black;
+  .NestingDoll {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Eyebrows {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top: -400px;
+
+    #BigEyebrow {
+      width: 45px;
+      position: absolute;
+      top: 78px;
+      left: 126px;
+      animation: 7s linear raiseBrow1 infinite;
+      animation-delay: 1s;
+      @keyframes raiseBrow1 {
+        0% {
+          transform: translateY(0px);
+        }
+        5% {
+          transform: translateY(-10px);
+        }
+        10% {
+          transform: translateY(-5px);
+        }
+        15% {
+          transform: translateY(-10px);
+        }
+        20% {
+          transform: translateY(0px);
+        }
+      }
+    }
+    #MidEyebrow {
+      width: 40px;
+      position: absolute;
+      top: 142px;
+      left: 248px;
+      animation: 7s linear raiseBrow2 infinite;
+      animation-delay: 3s;
+      @keyframes raiseBrow2 {
+        0% {
+          transform: translateY(0px);
+        }
+        5% {
+          transform: translateY(-8px);
+        }
+        10% {
+          transform: translateY(0px);
+        }
+      }
+    }
+    #SmallEyebrow {
+      width: 30px;
+      position: absolute;
+      top: 209px;
+      left: 339px;
+      animation: 7s linear raiseBrow3 infinite;
+      animation-delay: 4s;
+      @keyframes raiseBrow3 {
+        0% {
+          transform: translateY(0px);
+        }
+        10% {
+          transform: translateY(-4px);
+        }
+        20% {
+          transform: translateY(-4px);
+        }
+        30% {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+  .Signature {
+    width: 320px;
+    margin: auto;
+    position: relative;
+    top: -500px;
+    left: -200px;
+    #Signature {
+      width: 100%;
+      height: 100%;
+      animation: 5s ease appear forwards;
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        80% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
-.NestingDoll {
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-  padding-top: 40px;
+.Projects {
+  background-color: #fddf19;
+  .Description {
+    width: 450px;
+    height: 270px;
+    margin: 0px auto auto 100px;
+    padding-top: 50px;
+    text-align: justify;
+    h2 {
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+    h3 {
+      padding-bottom: 20px;
+    }
+    p {
+      color: red;
+      font-weight: bolder;
+      word-spacing: 20px;
+    }
+  }
+  .AllProjects {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    .Project {
+      min-width: 250px;
+      height: 250px;
+      border-radius: 50%;
+    }
+    #Proj1 {
+      background-image: url(./images/BendyCandleBg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #Proj2 {
+      background-image: url(./images/UnkownProject.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #Proj3 {
+      background-image: url(./images/UnkownProject.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .ProjCoverTop {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 150px;
+      border-top-right-radius: 150px;
+    }
+
+    .ProjCoverBottom {
+      width: 100%;
+      height: 50%;
+      border-bottom-left-radius: 150px;
+      border-bottom-right-radius: 150px;
+    }
+  }
+}
+
+.ProjCoverTop.Proj1 {
+  width: 100%;
+  background-color: #2a187d;
   img {
-    width: 100%;
-    height: 100%;
+    height: 100px;
+    position: relative;
+    top: 25px;
+    left: 77px;
   }
 }
-
-.Eyebrows {
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  position: relative;
-  top: -400px;
-
-  #BigEyebrow {
-    width: 45px;
-    position: absolute;
-    top: 78px;
-    left: 126px;
-    animation: 7s linear raiseBrow1 infinite;
-    animation-delay: 1s;
-    @keyframes raiseBrow1 {
-      0% {
-        transform: translateY(0px);
-      }
-      5% {
-        transform: translateY(-10px);
-      }
-      10% {
-        transform: translateY(-5px);
-      }
-      15% {
-        transform: translateY(-10px);
-      }
-      20% {
-        transform: translateY(0px);
-      }
-    }
-  }
-  #MidEyebrow {
-    width: 40px;
-    position: absolute;
-    top: 142px;
-    left: 248px;
-    animation: 7s linear raiseBrow2 infinite;
-    animation-delay: 3s;
-    @keyframes raiseBrow2 {
-      0% {
-        transform: translateY(0px);
-      }
-      5% {
-        transform: translateY(-8px);
-      }
-      10% {
-        transform: translateY(0px);
-      }
-    }
-  }
-  #SmallEyebrow {
-    width: 30px;
-    position: absolute;
-    top: 209px;
-    left: 339px;
-    animation: 7s linear raiseBrow3 infinite;
-    animation-delay: 4s;
-    @keyframes raiseBrow3 {
-      0% {
-        transform: translateY(0px);
-      }
-      10% {
-        transform: translateY(-4px);
-      }
-      20% {
-        transform: translateY(-4px);
-      }
-      30% {
-        transform: translateY(0px);
-      }
-    }
-  }
-}
-
-.Signature {
-  width: 320px;
-  margin: auto;
-  position: relative;
-  top: -500px;
-  left: -200px;
-  #Signature {
-    width: 100%;
-    height: 100%;
-    animation: 5s ease appear forwards;
-    @keyframes appear {
-      0% {
-        opacity: 0;
-      }
-      80% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.Projects-top-doll {
-  width: 100vw;
-  height: 50vh;
+.ProjCoverBottom.Proj1 {
+  width: 100%;
   background-color: #2a187d;
-  position: absolute;
-  top: 0vh;
-  animation: 2s ease slideToTop forwards;
-  animation-delay: 1s;
+  img {
+    height: 100px;
+    position: relative;
+    left: 77px;
+  }
 }
-.Projects-bottom-doll {
-  width: 100vw;
-  height: 50vh;
-  background-color: #2a187d;
-  position: absolute;
-  top: 50vh;
-  animation: 2s ease slideToBottom forwards;
-  animation-delay: 1s;
+
+.ProjCoverTop.Proj2 {
+  width: 100%;
+  background-color: black;
+  img {
+    height: 100px;
+    position: relative;
+    top: 25px;
+    left: 77px;
+  }
 }
+.ProjCoverBottom.Proj2 {
+  width: 100%;
+  background-color: black;
+  img {
+    height: 100px;
+    position: relative;
+    left: 77px;
+  }
+}
+
+.ProjCoverTop.Proj3 {
+  width: 100%;
+  background-color: #3c5cbb;
+  img {
+    height: 100px;
+    position: relative;
+    top: 25px;
+    left: 77px;
+  }
+}
+.ProjCoverBottom.Proj3 {
+  width: 100%;
+  background-color: #3c5cbb;
+  img {
+    height: 100px;
+    position: relative;
+    left: 77px;
+  }
+}
+
+.ProjCoverTop.Proj1:hover {
+  animation: 1s ease slideToTop forwards;
+}
+// .ProjCoverTop.Proj1:hover + .ProjCoverBottom.Proj1 {
+//   animation: 1s ease slideToBottom forwards;
+// }
 
 @keyframes slideToTop {
   0% {
-    transform: translateY(0vh);
-  }
-  99% {
+    transform: translateY(0px);
     opacity: 1;
   }
   100% {
-    transform: translateY(-50vh);
+    transform: translateY(-100px);
     opacity: 0;
   }
 }
 
 @keyframes slideToBottom {
   0% {
-    transform: translateY(0vh);
-  }
-  99% {
-    opacity: 1;
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(50vh);
+    transform: translateY(100px);
     opacity: 0;
-  }
-}
-
-.Projects {
-  background-color: #fddf19;
-}
-
-.Description {
-  width: 450px;
-  height: 270px;
-  margin: 0px auto auto 100px;
-  padding-top: 50px;
-  text-align: justify;
-  h2 {
-    font-size: 50px;
-    padding-bottom: 20px;
-  }
-  h3 {
-    padding-bottom: 20px;
-  }
-  p {
-    color: red;
-    font-weight: bolder;
-    word-spacing: 20px;
-  }
-}
-
-.AllProjects {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  justify-content: space-around;
-  .Project {
-    min-width: 250px;
-    height: 250px;
-    border-radius: 50%;
-  }
-  #Proj1 {
-    background-image: url(./images/BendyCandleBg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #Proj2 {
-    background-image: url(./images/UnkownProject.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #Proj3 {
-    background-image: url(./images/UnkownProject.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 }
 

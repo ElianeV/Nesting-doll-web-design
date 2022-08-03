@@ -1,4 +1,5 @@
 import "./App.scss";
+import React, { useState } from "react";
 import FullPage, {
   FullPageSections,
   FullpageSection,
@@ -8,8 +9,18 @@ import FullPage, {
 import BigEyebrow from "./images/BigEyebrow.png";
 import NestingDoll from "./images/NestingDoll.png";
 import Signature from "./images/Signature.png";
+import ProjTopLeft from "./images/ProjTopLeft.png";
+import ProjBottomLeft from "./images/ProjBottomLeft.png";
+import ProjTopRight from "./images/ProjTopRight.png";
+import ProjBottomRight from "./images/ProjBottomRight.png";
 
 function App() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const splitCover = () => {
+    setIsHovered(true);
+  };
+
   return (
     <FullPage>
       <FullPageSections>
@@ -42,11 +53,33 @@ function App() {
               <div
                 id="Proj1"
                 className="Project"
-                onClick="location.href='#';"
+                onClick={() => window.open("https://www.bendycandle.com")}
+                onMouseEnter={splitCover}
                 style={{ cursor: "pointer" }}
-              ></div>
-              <div id="Proj2" className="Project"></div>
-              <div id="Proj3" className="Project"></div>
+              >
+                <div className={isHovered ? "ProjCoverTop Proj1" : ""}>
+                  <img src={ProjTopLeft} />
+                </div>
+                <div className="ProjCoverBottom Proj1">
+                  <img src={ProjBottomLeft} />
+                </div>
+              </div>
+              <div id="Proj2" className="Project">
+                <div className="ProjCoverTop Proj2">
+                  <img src={ProjTopLeft} />
+                </div>
+                <div className="ProjCoverBottom Proj2">
+                  <img src={ProjBottomLeft} />
+                </div>
+              </div>
+              <div id="Proj3" className="Project">
+                <div className="ProjCoverTop Proj3">
+                  <img src={ProjTopRight} />
+                </div>
+                <div className="ProjCoverBottom Proj3">
+                  <img src={ProjBottomRight} />
+                </div>
+              </div>
             </div>
           </div>
         </FullpageSection>
