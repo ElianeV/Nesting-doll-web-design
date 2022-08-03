@@ -9,7 +9,6 @@
 }
 
 .Intro {
-  color: white;
   background-color: black;
 }
 
@@ -80,6 +79,22 @@
     position: absolute;
     top: 209px;
     left: 339px;
+    animation: 7s linear raiseBrow3 infinite;
+    animation-delay: 4s;
+    @keyframes raiseBrow3 {
+      0% {
+        transform: translateY(0px);
+      }
+      10% {
+        transform: translateY(-4px);
+      }
+      20% {
+        transform: translateY(-4px);
+      }
+      30% {
+        transform: translateY(0px);
+      }
+    }
   }
 }
 
@@ -152,10 +167,57 @@
   }
 }
 
-.About {
-  background-color: blue;
+.Projects {
+  background-color: #fddf19;
 }
 
-.Projects {
-  background-color: blueviolet;
+.Description {
+  width: 450px;
+  height: 270px;
+  margin: 0px auto auto 100px;
+  padding-top: 50px;
+  text-align: justify;
+  h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    padding-bottom: 20px;
+  }
+  p {
+    color: red;
+    font-weight: bolder;
+    word-spacing: 20px;
+  }
+}
+
+.AllProjects {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  .Project {
+    min-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  #Proj1 {
+    background-image: url(./images/BendyCandleBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #Proj2 {
+    background-image: url(./images/UnkownProject.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #Proj3 {
+    background-image: url(./images/UnkownProject.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.Contact {
+  background-color: black;
 }

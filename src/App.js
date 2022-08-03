@@ -29,21 +29,29 @@ function App() {
           </div>
         </FullpageSection>
         <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          <div className="FullScreen About">
-            <p>About</p>
-          </div>
-        </FullpageSection>
-        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          {/* <div className="Projects-top-doll"></div>
-          <div className="Projects-bottom-doll"></div> */}
           <div className="FullScreen Projects">
-            <p>Projects</p>
+            <div className="Description">
+              <h2>Bendy Candle</h2>
+              <h3>
+                An app created to improve your flexibility. It allows you to
+                create custom stretch routines and runs an automatic countdown.
+              </h3>
+              <p>HTML CSS/SASS Javascript React Vectornator</p>
+            </div>
+            <div className="AllProjects">
+              <div
+                id="Proj1"
+                className="Project"
+                onClick="location.href='#';"
+                style={{ cursor: "pointer" }}
+              ></div>
+              <div id="Proj2" className="Project"></div>
+              <div id="Proj3" className="Project"></div>
+            </div>
           </div>
         </FullpageSection>
         <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          <div className="FullScreen Contact">
-            <p>Contact</p>
-          </div>
+          <div className="FullScreen Contact"></div>
         </FullpageSection>
       </FullPageSections>
     </FullPage>
