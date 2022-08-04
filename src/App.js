@@ -16,9 +16,51 @@ import ProjBottomRight from "./images/ProjBottomRight.png";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+  const [isHovered3, setIsHovered3] = useState(false);
+  const [projTitle, setProjTitle] = useState("");
+  const [projDescription, setProjDescription] = useState("");
+  const [projSoftware, setProjSoftware] = useState("");
 
   const splitCover = () => {
     setIsHovered(true);
+    setProjTitle("Bendy Candle");
+    setProjDescription(
+      "An app created to improve your flexibility. It allows you to create custom stretch routines and runs an automatic countdown."
+    );
+    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+  };
+  const joinCover = () => {
+    setIsHovered(false);
+    setProjTitle("");
+    setProjDescription("");
+    setProjSoftware("");
+  };
+  const splitCover2 = () => {
+    setIsHovered2(true);
+    setProjTitle("Outdoor Boulder");
+    setProjDescription(
+      "Check the weather in Ireland to see which outdoor bouldering areas are ideal to visit."
+    );
+    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+  };
+  const joinCover2 = () => {
+    setIsHovered2(false);
+    setProjTitle("");
+    setProjDescription("");
+    setProjSoftware("");
+  };
+  const splitCover3 = () => {
+    setIsHovered3(true);
+    setProjTitle("Project Three");
+    setProjDescription("An app about traveling? Yoga? Recipe list/maker?");
+    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+  };
+  const joinCover3 = () => {
+    setIsHovered3(false);
+    setProjTitle("");
+    setProjDescription("");
+    setProjSoftware("");
   };
 
   return (
@@ -42,12 +84,9 @@ function App() {
         <FullpageSection style={{ width: "100vw", height: "100vh" }}>
           <div className="FullScreen Projects">
             <div className="Description">
-              <h2>Bendy Candle</h2>
-              <h3>
-                An app created to improve your flexibility. It allows you to
-                create custom stretch routines and runs an automatic countdown.
-              </h3>
-              <p>HTML CSS/SASS Javascript React Vectornator</p>
+              <h2>{projTitle}</h2>
+              <h3>{projDescription}</h3>
+              <p>{projSoftware}</p>
             </div>
             <div className="AllProjects">
               <div
@@ -55,28 +94,79 @@ function App() {
                 className="Project"
                 onClick={() => window.open("https://www.bendycandle.com")}
                 onMouseEnter={splitCover}
+                onMouseLeave={joinCover}
                 style={{ cursor: "pointer" }}
               >
-                <div className={isHovered ? "ProjCoverTop Proj1" : ""}>
+                <div
+                  className={
+                    isHovered
+                      ? "ProjCoverTop Proj1 AnimatedTop"
+                      : "ProjCoverTop Proj1"
+                  }
+                >
                   <img src={ProjTopLeft} />
                 </div>
-                <div className="ProjCoverBottom Proj1">
+                <div
+                  className={
+                    isHovered
+                      ? "ProjCoverBottom Proj1 AnimatedBottom"
+                      : "ProjCoverBottom Proj1"
+                  }
+                >
                   <img src={ProjBottomLeft} />
                 </div>
               </div>
-              <div id="Proj2" className="Project">
-                <div className="ProjCoverTop Proj2">
+              <div
+                id="Proj2"
+                className="Project"
+                onClick={() => window.open("#")}
+                onMouseEnter={splitCover2}
+                onMouseLeave={joinCover2}
+                style={{ cursor: "pointer" }}
+              >
+                <div
+                  className={
+                    isHovered2
+                      ? "ProjCoverTop Proj2 AnimatedTop"
+                      : "ProjCoverTop Proj2"
+                  }
+                >
                   <img src={ProjTopLeft} />
                 </div>
-                <div className="ProjCoverBottom Proj2">
+                <div
+                  className={
+                    isHovered2
+                      ? "ProjCoverBottom Proj2 AnimatedBottom"
+                      : "ProjCoverBottom Proj2"
+                  }
+                >
                   <img src={ProjBottomLeft} />
                 </div>
               </div>
-              <div id="Proj3" className="Project">
-                <div className="ProjCoverTop Proj3">
+              <div
+                id="Proj3"
+                className="Project"
+                onClick={() => window.open("#")}
+                onMouseEnter={splitCover3}
+                onMouseLeave={joinCover3}
+                style={{ cursor: "pointer" }}
+              >
+                <div
+                  className={
+                    isHovered3
+                      ? "ProjCoverTop Proj3 AnimatedTop"
+                      : "ProjCoverTop Proj3"
+                  }
+                >
                   <img src={ProjTopRight} />
                 </div>
-                <div className="ProjCoverBottom Proj3">
+                <div
+                  className={
+                    isHovered3
+                      ? "ProjCoverBottom Proj3 AnimatedBottom"
+                      : "ProjCoverBottom Proj3"
+                  }
+                >
                   <img src={ProjBottomRight} />
                 </div>
               </div>
