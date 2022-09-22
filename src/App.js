@@ -18,7 +18,7 @@ function App() {
 
   const splitCover = () => {
     setIsHovered(true);
-    setProjTitle("Bendy Candle");
+    setProjTitle("BENDY CANDLE");
     setProjDescription(
       "An app created to improve your flexibility. It allows you to create custom stretch routines and runs an automatic countdown."
     );
@@ -51,8 +51,20 @@ function App() {
   return (
     <>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div className="FullScreen Intro">
-          <a href="#hello">hello</a>
+        <div id="Home" className="FullScreen Intro">
+          <nav>
+            <ul>
+              <li>
+                <a href="#Home">HOME</a>
+              </li>
+              <li>
+                <a href="#Projects">PROJECTS</a>
+              </li>
+              <li>
+                <a href="#Contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
           <div className="NestingDoll">
             <img src={NestingDoll} alt="nestingdoll" />
           </div>
@@ -67,9 +79,9 @@ function App() {
         </div>
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div className="FullScreen Projects">
+        <div id="Projects" className="FullScreen Projects">
           <div className="Description">
-            <h2 id="hello">{projTitle}</h2>
+            <h2>{projTitle}</h2>
             <h3>{projDescription}</h3>
             <p>{projSoftware}</p>
           </div>
@@ -159,7 +171,7 @@ function App() {
         </div>
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div className="FullScreen Contact"></div>
+        <div id="Contact" className="FullScreen Contact"></div>
       </div>
     </>
   );
