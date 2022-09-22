@@ -18,7 +18,7 @@ function App() {
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
-  const [projTitle, setProjTitle] = useState("");
+  const [projTitle, setProjTitle] = useState("open us...");
   const [projDescription, setProjDescription] = useState("");
   const [projSoftware, setProjSoftware] = useState("");
 
@@ -32,9 +32,6 @@ function App() {
   };
   const joinCover = () => {
     setIsHovered(false);
-    setProjTitle("");
-    setProjDescription("");
-    setProjSoftware("");
   };
   const splitCover2 = () => {
     setIsHovered2(true);
@@ -46,9 +43,6 @@ function App() {
   };
   const joinCover2 = () => {
     setIsHovered2(false);
-    setProjTitle("");
-    setProjDescription("");
-    setProjSoftware("");
   };
   const splitCover3 = () => {
     setIsHovered3(true);
@@ -58,126 +52,122 @@ function App() {
   };
   const joinCover3 = () => {
     setIsHovered3(false);
-    setProjTitle("");
-    setProjDescription("");
-    setProjSoftware("");
   };
 
   return (
-    <FullPage>
-      <FullPageSections>
-        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          <div className="FullScreen Intro">
-            <div className="NestingDoll">
-              <img src={NestingDoll} alt="nestingdoll" />
+    <>
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <div className="FullScreen Intro">
+          <a href="#hello">hello</a>
+          <div className="NestingDoll">
+            <img src={NestingDoll} alt="nestingdoll" />
+          </div>
+          <div className="Eyebrows">
+            <img id="BigEyebrow" src={BigEyebrow} alt="eyebrow" />
+            <img id="MidEyebrow" src={BigEyebrow} alt="eyebrow" />
+            <img id="SmallEyebrow" src={BigEyebrow} alt="eyebrow" />
+          </div>
+          <div className="Signature">
+            <img id="Signature" src={Signature} alt="signature" />
+          </div>
+        </div>
+      </div>
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <div className="FullScreen Projects">
+          <div className="Description">
+            <h2 id="hello">{projTitle}</h2>
+            <h3>{projDescription}</h3>
+            <p>{projSoftware}</p>
+          </div>
+          <div className="AllProjects">
+            <div
+              id="Proj1"
+              className="Project"
+              onClick={() => window.open("https://www.bendycandle.com")}
+              onMouseEnter={splitCover}
+              onMouseLeave={joinCover}
+              style={{ cursor: "pointer" }}
+            >
+              <div
+                className={
+                  isHovered
+                    ? "ProjCoverTop Proj1 AnimatedTop"
+                    : "ProjCoverTop Proj1"
+                }
+              >
+                <img src={ProjTopLeft} />
+              </div>
+              <div
+                className={
+                  isHovered
+                    ? "ProjCoverBottom Proj1 AnimatedBottom"
+                    : "ProjCoverBottom Proj1"
+                }
+              >
+                <img src={ProjBottomLeft} />
+              </div>
             </div>
-            <div className="Eyebrows">
-              <img id="BigEyebrow" src={BigEyebrow} alt="eyebrow" />
-              <img id="MidEyebrow" src={BigEyebrow} alt="eyebrow" />
-              <img id="SmallEyebrow" src={BigEyebrow} alt="eyebrow" />
+            <div
+              id="Proj2"
+              className="Project"
+              onClick={() => window.open("#")}
+              onMouseEnter={splitCover2}
+              onMouseLeave={joinCover2}
+              style={{ cursor: "pointer" }}
+            >
+              <div
+                className={
+                  isHovered2
+                    ? "ProjCoverTop Proj2 AnimatedTop"
+                    : "ProjCoverTop Proj2"
+                }
+              >
+                <img src={ProjTopLeft} />
+              </div>
+              <div
+                className={
+                  isHovered2
+                    ? "ProjCoverBottom Proj2 AnimatedBottom"
+                    : "ProjCoverBottom Proj2"
+                }
+              >
+                <img src={ProjBottomLeft} />
+              </div>
             </div>
-            <div className="Signature">
-              <img id="Signature" src={Signature} alt="signature" />
+            <div
+              id="Proj3"
+              className="Project"
+              onClick={() => window.open("#")}
+              onMouseEnter={splitCover3}
+              onMouseLeave={joinCover3}
+              style={{ cursor: "pointer" }}
+            >
+              <div
+                className={
+                  isHovered3
+                    ? "ProjCoverTop Proj3 AnimatedTop"
+                    : "ProjCoverTop Proj3"
+                }
+              >
+                <img src={ProjTopRight} />
+              </div>
+              <div
+                className={
+                  isHovered3
+                    ? "ProjCoverBottom Proj3 AnimatedBottom"
+                    : "ProjCoverBottom Proj3"
+                }
+              >
+                <img src={ProjBottomRight} />
+              </div>
             </div>
           </div>
-        </FullpageSection>
-        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          <div className="FullScreen Projects">
-            <div className="Description">
-              <h2>{projTitle}</h2>
-              <h3>{projDescription}</h3>
-              <p>{projSoftware}</p>
-            </div>
-            <div className="AllProjects">
-              <div
-                id="Proj1"
-                className="Project"
-                onClick={() => window.open("https://www.bendycandle.com")}
-                onMouseEnter={splitCover}
-                onMouseLeave={joinCover}
-                style={{ cursor: "pointer" }}
-              >
-                <div
-                  className={
-                    isHovered
-                      ? "ProjCoverTop Proj1 AnimatedTop"
-                      : "ProjCoverTop Proj1"
-                  }
-                >
-                  <img src={ProjTopLeft} />
-                </div>
-                <div
-                  className={
-                    isHovered
-                      ? "ProjCoverBottom Proj1 AnimatedBottom"
-                      : "ProjCoverBottom Proj1"
-                  }
-                >
-                  <img src={ProjBottomLeft} />
-                </div>
-              </div>
-              <div
-                id="Proj2"
-                className="Project"
-                onClick={() => window.open("#")}
-                onMouseEnter={splitCover2}
-                onMouseLeave={joinCover2}
-                style={{ cursor: "pointer" }}
-              >
-                <div
-                  className={
-                    isHovered2
-                      ? "ProjCoverTop Proj2 AnimatedTop"
-                      : "ProjCoverTop Proj2"
-                  }
-                >
-                  <img src={ProjTopLeft} />
-                </div>
-                <div
-                  className={
-                    isHovered2
-                      ? "ProjCoverBottom Proj2 AnimatedBottom"
-                      : "ProjCoverBottom Proj2"
-                  }
-                >
-                  <img src={ProjBottomLeft} />
-                </div>
-              </div>
-              <div
-                id="Proj3"
-                className="Project"
-                onClick={() => window.open("#")}
-                onMouseEnter={splitCover3}
-                onMouseLeave={joinCover3}
-                style={{ cursor: "pointer" }}
-              >
-                <div
-                  className={
-                    isHovered3
-                      ? "ProjCoverTop Proj3 AnimatedTop"
-                      : "ProjCoverTop Proj3"
-                  }
-                >
-                  <img src={ProjTopRight} />
-                </div>
-                <div
-                  className={
-                    isHovered3
-                      ? "ProjCoverBottom Proj3 AnimatedBottom"
-                      : "ProjCoverBottom Proj3"
-                  }
-                >
-                  <img src={ProjBottomRight} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </FullpageSection>
-        <FullpageSection style={{ width: "100vw", height: "100vh" }}>
-          <div className="FullScreen Contact"></div>
-        </FullpageSection>
-      </FullPageSections>
-    </FullPage>
+        </div>
+      </div>
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <div className="FullScreen Contact"></div>
+      </div>
+    </>
   );
 }
 

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .FullScreen {
   width: 100vw;
   height: 100vh;
@@ -33,7 +37,7 @@
       position: absolute;
       top: 78px;
       left: 126px;
-      animation: 7s linear raiseBrow1 infinite;
+      animation: 5s linear raiseBrow1 infinite;
       animation-delay: 1s;
       @keyframes raiseBrow1 {
         0% {
@@ -58,8 +62,8 @@
       position: absolute;
       top: 142px;
       left: 248px;
-      animation: 7s linear raiseBrow2 infinite;
-      animation-delay: 3s;
+      animation: 5s linear raiseBrow2 infinite;
+      animation-delay: 2s;
       @keyframes raiseBrow2 {
         0% {
           transform: translateY(0px);
@@ -77,8 +81,8 @@
       position: absolute;
       top: 209px;
       left: 339px;
-      animation: 7s linear raiseBrow3 infinite;
-      animation-delay: 4s;
+      animation: 5s linear raiseBrow3 infinite;
+      animation-delay: 3s;
       @keyframes raiseBrow3 {
         0% {
           transform: translateY(0px);
@@ -104,7 +108,7 @@
     #Signature {
       width: 100%;
       height: 100%;
-      animation: 5s ease appear forwards;
+      animation: 4s ease appear forwards;
       @keyframes appear {
         0% {
           opacity: 0;
