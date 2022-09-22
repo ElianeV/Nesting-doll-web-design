@@ -1,11 +1,5 @@
 import "./App.scss";
 import React, { useState } from "react";
-import FullPage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-  Fullpage,
-} from "@ap.cx/react-fullpage";
 import BigEyebrow from "./images/BigEyebrow.png";
 import NestingDoll from "./images/NestingDoll.png";
 import Signature from "./images/Signature.png";
