@@ -75,6 +75,7 @@ function App() {
           </div>
           <div className="Signature">
             <img id="Signature" src={Signature} alt="signature" />
+            <p id="WebDev"> WEB DEVELOPMENT</p>
           </div>
         </div>
       </div>
