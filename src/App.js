@@ -34,7 +34,12 @@ function App() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
+      body: encode({
+        "form-name": "contact",
+        name2: "John",
+        email2: "jgillan@gmail.com",
+        message2: "love of my life",
+      }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
