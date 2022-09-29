@@ -17,50 +17,6 @@ function App() {
   const [projSoftware, setProjSoftware] = useState("");
   const [gitHubLink, setGithubLink] = useState("");
 
-  // Start form
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // };
-
-  // const handleSubmit = (e) => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({
-  //       "form-name": "contact",
-  //       name2: "John",
-  //       email2: "jgillan@gmail.com",
-  //       message2: "love of my life",
-  //     }),
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch((error) => alert(error));
-
-  //   e.preventDefault();
-  // };
-
-  // const handleName = (e) => {
-  //   setName(e.target.value);
-  // };
-
-  // const handleEmail = (e) => {
-  //   setEmail(e.target.value);
-  // };
-
-  // const handleMessage = (e) => {
-  //   setMessage(e.target.value);
-  // };
-
-  // End form
-
   const splitCover = () => {
     setIsHovered(true);
     setProjTitle("BENDY CANDLE");
@@ -235,82 +191,21 @@ function App() {
         </div>
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="ContactPage" className="FullScreen Contact">
-          {/* <form onSubmit={handleSubmit}>
-            <p>
-              <label>
-                Your Name:{" "}
-                <input
-                  type="text"
-                  name="name"
-                  value={name}
-                  onChange={handleName}
-                />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your Email:{" "}
-                <input
-                  type="email"
-                  name="email"
-                  value={email}
-                  onChange={handleEmail}
-                />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message:{" "}
-                <textarea
-                  name="message"
-                  value={message}
-                  onChange={handleMessage}
-                />
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form> */}
+        <div id="Contact" className="FullScreen Contact">
           <form
-            className="contact-form"
+            className="contactForm"
             name="Contact Form"
             method="POST"
             data-netlify="true"
           >
             <input type="hidden" name="form-name" value="Contact Form" />
-
-            <div className="form-row">
-              <input
-                type="text"
-                name="name"
-                className="form-input"
-                placeholder="Name"
-                required
-              />
-              <input
-                id="email"
-                type="email"
-                name="email"
-                className="form-input"
-                placeholder="Email"
-                required
-              />
-            </div>
-
-            <textarea
-              id="message"
-              className="form-textarea"
-              name="message"
-              rows="3"
-              placeholder="Your message"
-              required
-            ></textarea>
-
-            <button type="submit" className="form-submit-button">
-              Submit
-            </button>
+            <label for="name">Name</label>
+            <input type="text" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea name="message" required></textarea>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
