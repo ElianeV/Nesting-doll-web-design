@@ -192,9 +192,21 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="Contact" className="FullScreen Contact">
-          <form action="POST" data-netlify="true" data-netlify-recaptcha="true">
-            <input type="text" name="name" id="name" placeholder="Name" required/>
-            <input type="email" name="email" id="email" placeholder="Email" required/>
+          <form action="POST" data-netlify="true">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
             <textarea
               name="message"
               id="message"
@@ -202,10 +214,10 @@ function App() {
               cols="30"
               rows="10"
             ></textarea>
-            <div
+            {/* <div
               style={{ width: "100px", height: "100px" }}
               data-netlify-recaptcha="true"
-            ></div>
+            ></div> */}
             <input type="submit" value="Send message" class="messageButton" />
           </form>
         </div>
