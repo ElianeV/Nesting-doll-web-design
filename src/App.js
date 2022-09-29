@@ -39,7 +39,12 @@ function App() {
     setProjDescription(
       "Check the weather in Ireland to see which outdoor bouldering areas are ideal to visit."
     );
-    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+    setProjSoftware("HTML CSS/SASS Javascript React ");
+    setGithubLink(
+      <a href="https://github.com/ElianeV/Bouldering" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    );
   };
   const joinCover2 = () => {
     setIsHovered2(false);
@@ -48,7 +53,12 @@ function App() {
     setIsHovered3(true);
     setProjTitle("MYSTERY PROJ");
     setProjDescription("This mystery project is still in the making.");
-    setProjSoftware("N/A N/A N/A N/A N/A");
+    setProjSoftware("N/A N/A N/A N/A N/A ");
+    setGithubLink(
+      <a href="#" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    );
   };
   const joinCover3 = () => {
     setIsHovered3(false);
@@ -181,7 +191,9 @@ function App() {
         </div>
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="Contact" className="FullScreen Contact"></div>
+        <div id="Contact" className="FullScreen Contact">
+          
+        </div>
       </div>
     </>
   );
