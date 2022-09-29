@@ -191,8 +191,13 @@ function App() {
         </div>
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="Contact" className="FullScreen Contact">
-          <form name="contact" method="POST" data-netlify="true">
+        <div id="ContactPage" className="FullScreen Contact">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            Content-Type="application/x-www-form-urlencoded"
+          >
             <p>
               <label>
                 Your Name: <input type="text" name="name" />
