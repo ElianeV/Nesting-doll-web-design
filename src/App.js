@@ -29,7 +29,7 @@ function App() {
   };
   const splitCover2 = () => {
     setIsHovered2(true);
-    setProjTitle("Outdoor Boulder");
+    setProjTitle("OUT BOULDERING");
     setProjDescription(
       "Check the weather in Ireland to see which outdoor bouldering areas are ideal to visit."
     );
@@ -40,9 +40,9 @@ function App() {
   };
   const splitCover3 = () => {
     setIsHovered3(true);
-    setProjTitle("Project Three");
-    setProjDescription("An app about traveling? Yoga? Recipe list/maker?");
-    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+    setProjTitle("MYSTERY PROJ");
+    setProjDescription("This mystery project is still in the making.");
+    setProjSoftware("N/A N/A N/A N/A N/A");
   };
   const joinCover3 = () => {
     setIsHovered3(false);

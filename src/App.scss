@@ -17,12 +17,10 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-
   li {
     list-style-type: none;
     float: left;
   }
-
   a {
     display: block;
     color: #3c5cbb;
@@ -30,11 +28,9 @@ nav {
     font-size: 15px;
     text-decoration: none;
   }
-
   a:hover {
     color: #839ae9;
   }
-
   a:active {
     color: #839ae9;
   }
@@ -201,7 +197,7 @@ nav {
       background-size: cover;
     }
     #Proj2 {
-      background-image: url(./images/UnkownProject.png);
+      background-image: url(./images/outBouldering.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
