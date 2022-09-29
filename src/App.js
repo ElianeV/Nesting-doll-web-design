@@ -192,33 +192,25 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="Contact" className="FullScreen Contact">
-          <form action="POST" data-netlify="true">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            {/* <div
-              style={{ width: "100px", height: "100px" }}
-              data-netlify-recaptcha="true"
-            ></div> */}
-            <input type="submit" value="Send message" class="messageButton" />
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>
+                Your Name: <input type="text" name="name" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Your Email: <input type="email" name="email" />
+              </label>
+            </p>
+            <p>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
           </form>
         </div>
       </div>
