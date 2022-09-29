@@ -12,9 +12,10 @@ function App() {
   const [isHovered, setIsHovered] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const [isHovered3, setIsHovered3] = useState(false);
-  const [projTitle, setProjTitle] = useState("open us...");
+  const [projTitle, setProjTitle] = useState("OPEN US...");
   const [projDescription, setProjDescription] = useState("");
   const [projSoftware, setProjSoftware] = useState("");
+  const [gitHubLink, setGithubLink] = useState("");
 
   const splitCover = () => {
     setIsHovered(true);
@@ -22,7 +23,12 @@ function App() {
     setProjDescription(
       "An app created to improve your flexibility. It allows you to create custom stretch routines and runs an automatic countdown."
     );
-    setProjSoftware("HTML CSS/SASS Javascript React Vectornator");
+    setProjSoftware("HTML CSS/SASS Javascript React ");
+    setGithubLink(
+      <a href="https://github.com/ElianeV/Bendy-Candle" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    );
   };
   const joinCover = () => {
     setIsHovered(false);
@@ -84,7 +90,10 @@ function App() {
           <div className="Description">
             <h2>{projTitle}</h2>
             <h3>{projDescription}</h3>
-            <p>{projSoftware}</p>
+            <p>
+              {projSoftware}
+              {gitHubLink}
+            </p>
           </div>
           <div className="AllProjects">
             <div
