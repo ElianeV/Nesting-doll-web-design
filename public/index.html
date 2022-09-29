@@ -17,6 +17,36 @@
     <title>Eliane codes</title>
   </head>
   <body>
+    <form name="Contact Form" netlify hidden>
+      <div className="form-row">
+        <input
+          type="text"
+          name="name"
+          class="form-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          id="email"
+          type="email"
+          name="email"
+          class="form-input"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <textarea
+        id="message"
+        class="form-textarea"
+        name="message"
+        rows="3"
+        placeholder="Your message"
+        required
+      ></textarea>
+
+      <button type="submit" className="form-submit-button">Submit</button>
+    </form>
     <div id="root"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
