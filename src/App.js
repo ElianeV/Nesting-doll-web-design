@@ -18,46 +18,46 @@ function App() {
   const [gitHubLink, setGithubLink] = useState("");
 
   // Start form
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // };
 
-  const handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        name2: "John",
-        email2: "jgillan@gmail.com",
-        message2: "love of my life",
-      }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+  // const handleSubmit = (e) => {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": "contact",
+  //       name2: "John",
+  //       email2: "jgillan@gmail.com",
+  //       message2: "love of my life",
+  //     }),
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch((error) => alert(error));
 
-    e.preventDefault();
-  };
+  //   e.preventDefault();
+  // };
 
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
+  // const handleName = (e) => {
+  //   setName(e.target.value);
+  // };
 
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
+  // const handleEmail = (e) => {
+  //   setEmail(e.target.value);
+  // };
 
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-  };
+  // const handleMessage = (e) => {
+  //   setMessage(e.target.value);
+  // };
 
   // End form
 
@@ -236,7 +236,7 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="ContactPage" className="FullScreen Contact">
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}>
             <p>
               <label>
                 Your Name:{" "}
@@ -272,6 +272,45 @@ function App() {
             <p>
               <button type="submit">Send</button>
             </p>
+          </form> */}
+          <form
+            className="contact-form"
+            name="Contact Form"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="Contact Form" />
+
+            <div className="form-row">
+              <input
+                type="text"
+                name="name"
+                className="form-input"
+                placeholder="Name"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                className="form-input"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <textarea
+              id="message"
+              className="form-textarea"
+              name="message"
+              rows="3"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit" className="form-submit-button">
+              Submit
+            </button>
           </form>
         </div>
       </div>
