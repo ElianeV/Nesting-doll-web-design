@@ -17,11 +17,39 @@
     <title>Eliane codes</title>
   </head>
   <body>
-    <form name="Contact Form" netlify hidden>
-      <input type="text" name="name" required />
-      <input type="email" name="email" required />
-      <textarea name="message" required></textarea>
-      <button type="submit">Submit</button>
+    <form name="Contact Form" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="Contact Form" />
+      <div className="inputDiv">
+        <input
+          type="text"
+          name="name"
+          className="underlineEffect"
+          placeholder="NAME"
+          required
+        />
+        <span class="focusBorder"></span>
+      </div>
+      <div className="inputDiv">
+        <input
+          type="email"
+          name="email"
+          className="underlineEffect"
+          placeholder="EMAIL"
+          required
+        />
+        <span class="focusBorder"></span>
+      </div>
+      <div className="inputDiv">
+        <textarea
+          name="message"
+          className="underlineEffect2"
+          placeholder="MESSAGE"
+          required
+          rows="{4}"
+        ></textarea>
+        <span class="focusBorder"></span>
+      </div>
+      <button type="submit" className="button">SUBMIT</button>
     </form>
     <div id="root"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
