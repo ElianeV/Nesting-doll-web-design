@@ -6,7 +6,6 @@ $yellow: #fddf19;
   margin: 0;
   padding: 0;
   font-family: "Tahoma", Geneva, Verdana, sans-serif;
-  box-sizing: border-box;
 }
 
 html {
@@ -296,6 +295,7 @@ nav {
 .Contact {
   display: flex;
   background-color: black;
+  box-sizing: border-box;
   form {
     width: 40vw;
     height: 90vh;
@@ -305,7 +305,7 @@ nav {
     .inputDiv {
       float: left;
       width: 100%;
-      margin: 40px 0;
+      margin: 20px 0;
       position: relative;
     }
     .underlineEffect {
@@ -314,11 +314,13 @@ nav {
       padding: 7px 0;
       border-bottom: 2px solid $lightgrey;
       background-color: black;
+      color: $lightgrey;
+      font-size: 18px;
     }
     input:focus {
       outline: none;
-      font-size: 15px;
-      line-height: 24px;
+      font-size: 20px;
+      line-height: 30px;
       color: $yellow;
       width: 100%;
     }
@@ -333,15 +335,46 @@ nav {
     }
     .underlineEffect:focus ~ .focusBorder {
       width: 100%;
-      transition: 0.65;
+      transition: 0.5s;
     }
-
-    textarea {
-      width: 100%;
+    textarea:focus {
+      outline: none;
+      font-size: 20px;
+      line-height: 30px;
+      color: $yellow;
+    }
+    .underlineEffect2 {
       resize: none;
+      margin-top: 20px;
+      width: 100%;
+      border: 0;
+      padding: 7px 0;
+      border-bottom: 2px solid $lightgrey;
+      background-color: black;
+      color: $lightgrey;
+      font-size: 18px;
+    }
+    .underlineEffect2 ~ .focusBorder {
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $yellow;
+      transition: 0.4s;
+    }
+    .underlineEffect2:focus ~ .focusBorder {
+      width: 100%;
+      transition: 1s;
     }
     button {
       display: block;
+      width: 30%;
+      height: 40px;
+      background-color: red;
+      border: none;
+      padding: 0;
+      cursor: pointer;
     }
   }
 }

@@ -214,12 +214,21 @@ function App() {
               />
               <span class="focusBorder"></span>
             </div>
-            <textarea
-              name="message"
-              className="textArea"
-              placeholder="MESSAGE"
-              required
-            ></textarea>
+            <div className="inputDiv">
+              <textarea
+                name="message"
+                className="underlineEffect2"
+                placeholder="MESSAGE"
+                required
+                rows={4}
+              ></textarea>
+              <span class="focusBorder"></span>
+            </div>
+            <div
+              type="hidden"
+              name="recaptcha"
+              data-netlify-recaptcha="true"
+            ></div>
             <button type="submit" className="button">
               SUBMIT
             </button>
