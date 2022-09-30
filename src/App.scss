@@ -1,7 +1,12 @@
+$grey: #2f2f2f;
+$lightgrey: #aaaaaa;
+$yellow: #fddf19;
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Tahoma", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,7 +18,7 @@ html {
   height: 100vh;
 }
 
-/* INTRO */
+// INTRO
 nav {
   position: fixed;
   top: 0;
@@ -156,7 +161,7 @@ nav {
   }
 }
 
-/* PROJECTS */
+// PROJECTS
 
 .Projects {
   background-color: #fddf19;
@@ -286,6 +291,61 @@ nav {
   }
 }
 
+// CONTACT
+
+.Contact {
+  display: flex;
+  background-color: black;
+  form {
+    width: 40vw;
+    height: 90vh;
+    margin: auto;
+    box-sizing: border-box;
+
+    .inputDiv {
+      float: left;
+      width: 100%;
+      margin: 40px 0;
+      position: relative;
+    }
+    .underlineEffect {
+      width: 100%;
+      border: 0;
+      padding: 7px 0;
+      border-bottom: 2px solid $lightgrey;
+      background-color: black;
+    }
+    input:focus {
+      outline: none;
+      font-size: 15px;
+      line-height: 24px;
+      color: $yellow;
+      width: 100%;
+    }
+    .underlineEffect ~ .focusBorder {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $yellow;
+      transition: 0.5s;
+    }
+    .underlineEffect:focus ~ .focusBorder {
+      width: 100%;
+      transition: 0.65;
+    }
+
+    textarea {
+      width: 100%;
+      resize: none;
+    }
+    button {
+      display: block;
+    }
+  }
+}
+
 /* ANIMATIONS PROJECT COVERS */
 .ProjCoverTop.Proj1.AnimatedTop {
   animation: 1s ease slideToTop forwards;
@@ -334,7 +394,3 @@ nav {
 }
 
 /* CONTACT */
-
-.Contact {
-  background-color: black;
-}

@@ -192,20 +192,37 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="Contact" className="FullScreen Contact">
-          <form
-            className="contactForm"
-            name="Contact Form"
-            method="POST"
-            data-netlify="true"
-          >
+          <form name="Contact Form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="Contact Form" />
-            <label for="name">Name</label>
-            <input type="text" name="name" required />
-            <label for="email">Email</label>
-            <input type="email" name="email" required />
-            <label for="message">Message</label>
-            <textarea name="message" required></textarea>
-            <button type="submit">Submit</button>
+            <div className="inputDiv">
+              <input
+                type="text"
+                name="name"
+                className="underlineEffect"
+                placeholder="NAME"
+                required
+              />
+              <span class="focusBorder"></span>
+            </div>
+            <div className="inputDiv">
+              <input
+                type="email"
+                name="email"
+                className="underlineEffect"
+                placeholder="EMAIL"
+                required
+              />
+              <span class="focusBorder"></span>
+            </div>
+            <textarea
+              name="message"
+              className="textArea"
+              placeholder="MESSAGE"
+              required
+            ></textarea>
+            <button type="submit" className="button">
+              SUBMIT
+            </button>
           </form>
         </div>
       </div>
