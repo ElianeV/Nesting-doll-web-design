@@ -293,88 +293,105 @@ nav {
 // CONTACT
 
 .Contact {
-  display: flex;
   background-color: black;
-  box-sizing: border-box;
-  form {
-    width: 40vw;
-    height: 90vh;
+  .formContainer {
     margin: auto;
     box-sizing: border-box;
+    width: 40vw;
+    .socialMedia {
+      width: 72px;
+      height: 150px;
+    }
+    a {
+      margin: 0;
+    }
+    a:nth-child(2) {
+      padding-left: 10px;
+    }
+    i {
+      margin: 50px 0;
+      font-size: 36px;
+      color: $yellow;
+    }
+    form {
+      width: 40vw;
+      height: 400px;
+      box-sizing: border-box;
 
-    .inputDiv {
-      float: left;
-      width: 100%;
-      margin: 20px 0;
-      position: relative;
-    }
-    .underlineEffect {
-      width: 100%;
-      border: 0;
-      padding: 7px 0;
-      border-bottom: 2px solid $lightgrey;
-      background-color: black;
-      color: $lightgrey;
-      font-size: 18px;
-    }
-    input:focus {
-      outline: none;
-      font-size: 20px;
-      line-height: 30px;
-      color: $yellow;
-      width: 100%;
-    }
-    .underlineEffect ~ .focusBorder {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: $yellow;
-      transition: 0.5s;
-    }
-    .underlineEffect:focus ~ .focusBorder {
-      width: 100%;
-      transition: 0.5s;
-    }
-    textarea:focus {
-      outline: none;
-      font-size: 20px;
-      line-height: 30px;
-      color: $yellow;
-    }
-    .underlineEffect2 {
-      resize: none;
-      margin-top: 20px;
-      width: 100%;
-      border: 0;
-      padding: 7px 0;
-      border-bottom: 2px solid $lightgrey;
-      background-color: black;
-      color: $lightgrey;
-      font-size: 18px;
-    }
-    .underlineEffect2 ~ .focusBorder {
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: $yellow;
-      transition: 0.4s;
-    }
-    .underlineEffect2:focus ~ .focusBorder {
-      width: 100%;
-      transition: 1s;
-    }
-    button {
-      display: block;
-      width: 30%;
-      height: 40px;
-      background-color: red;
-      border: none;
-      padding: 0;
-      cursor: pointer;
+      .inputDiv {
+        float: left;
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+      }
+      .underlineEffect {
+        width: 100%;
+        border: 0;
+        padding: 7px 0;
+        border-bottom: 2px solid $lightgrey;
+        background-color: black;
+        color: $lightgrey;
+        font-size: 18px;
+      }
+      input:focus {
+        outline: none;
+        font-size: 20px;
+        line-height: 30px;
+        color: $yellow;
+        width: 100%;
+      }
+      .underlineEffect ~ .focusBorder {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $yellow;
+        transition: 0.5s;
+      }
+      .underlineEffect:focus ~ .focusBorder {
+        width: 100%;
+        transition: 0.5s;
+      }
+      textarea:focus {
+        outline: none;
+        font-size: 20px;
+        line-height: 30px;
+        color: $yellow;
+      }
+      .underlineEffect2 {
+        resize: none;
+        margin-top: 20px;
+        width: 100%;
+        border: 0;
+        padding: 7px 0;
+        border-bottom: 2px solid $lightgrey;
+        background-color: black;
+        color: $lightgrey;
+        font-size: 18px;
+      }
+      .underlineEffect2 ~ .focusBorder {
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $yellow;
+        transition: 0.4s;
+      }
+      .underlineEffect2:focus ~ .focusBorder {
+        width: 100%;
+        transition: 1s;
+      }
+      button {
+        display: block;
+        width: 30%;
+        height: 40px;
+        background-color: red;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+      }
     }
   }
 }

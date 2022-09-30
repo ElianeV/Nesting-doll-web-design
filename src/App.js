@@ -192,42 +192,55 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="Contact" className="FullScreen Contact">
-          <form name="Contact Form" method="POST" data-netlify="true">
-            <input type="hidden" name="form-name" value="Contact Form" />
-            <div className="inputDiv">
-              <input
-                type="text"
-                name="name"
-                className="underlineEffect"
-                placeholder="NAME"
-                required
-              />
-              <span class="focusBorder"></span>
+          <div className="formContainer">
+            <div className="socialMedia">
+              <a href="https://github.com/ElianeV" target="_blank">
+                <i class="fa fa-github-square"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/eliane-van-der-cruyssen/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin-square"></i>
+              </a>
             </div>
-            <div className="inputDiv">
-              <input
-                type="email"
-                name="email"
-                className="underlineEffect"
-                placeholder="EMAIL"
-                required
-              />
-              <span class="focusBorder"></span>
-            </div>
-            <div className="inputDiv">
-              <textarea
-                name="message"
-                className="underlineEffect2"
-                placeholder="MESSAGE"
-                required
-                rows={4}
-              ></textarea>
-              <span class="focusBorder"></span>
-            </div>
-            <button type="submit" className="button">
-              SUBMIT
-            </button>
-          </form>
+            <form name="Contact Form" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="Contact Form" />
+              <div className="inputDiv">
+                <input
+                  type="text"
+                  name="name"
+                  className="underlineEffect"
+                  placeholder="NAME"
+                  required
+                />
+                <span class="focusBorder"></span>
+              </div>
+              <div className="inputDiv">
+                <input
+                  type="email"
+                  name="email"
+                  className="underlineEffect"
+                  placeholder="EMAIL"
+                  required
+                />
+                <span class="focusBorder"></span>
+              </div>
+              <div className="inputDiv">
+                <textarea
+                  name="message"
+                  className="underlineEffect2"
+                  placeholder="MESSAGE"
+                  required
+                  rows={4}
+                ></textarea>
+                <span class="focusBorder"></span>
+              </div>
+              <button type="submit" className="button">
+                SUBMIT
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </>
