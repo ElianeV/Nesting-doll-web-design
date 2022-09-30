@@ -1,5 +1,5 @@
 $grey: #2f2f2f;
-$lightgrey: #aaaaaa;
+$lightgrey: #515151;
 $yellow: #fddf19;
 
 * {
@@ -172,7 +172,7 @@ nav {
     text-align: justify;
 
     h2 {
-      font-size: 50px;
+      font-size: 40px;
       padding-bottom: 20px;
       animation: 1s ease appear2 forwards;
     }
@@ -299,8 +299,10 @@ nav {
     box-sizing: border-box;
     width: 40vw;
     .socialMedia {
+      margin: 100px 0 0 0;
       width: 72px;
-      height: 150px;
+      height: 36px;
+      float: right;
     }
     a {
       margin: 0;
@@ -309,15 +311,14 @@ nav {
       padding-left: 10px;
     }
     i {
-      margin: 50px 0;
       font-size: 36px;
       color: $yellow;
     }
     form {
       width: 40vw;
-      height: 400px;
+      height: 550px;
       box-sizing: border-box;
-
+      position: relative;
       .inputDiv {
         float: left;
         width: 100%;
@@ -339,6 +340,9 @@ nav {
         line-height: 30px;
         color: $yellow;
         width: 100%;
+      }
+      ::placeholder {
+        color: $lightgrey
       }
       .underlineEffect ~ .focusBorder {
         position: absolute;
@@ -384,9 +388,12 @@ nav {
         transition: 1s;
       }
       button {
-        display: block;
-        width: 30%;
+        width: 150px;
         height: 40px;
+        position: absolute;
+        bottom: 0px;
+        margin: auto;
+        font-size: 20px;
         background-color: red;
         border: none;
         padding: 0;

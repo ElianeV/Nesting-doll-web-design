@@ -51,7 +51,7 @@ function App() {
   };
   const splitCover3 = () => {
     setIsHovered3(true);
-    setProjTitle("MYSTERY PROJ");
+    setProjTitle("MYSTERY PROJECT");
     setProjDescription("This mystery project is still in the making.");
     setProjSoftware("N/A N/A N/A N/A N/A ");
     setGithubLink(
@@ -195,13 +195,13 @@ function App() {
           <div className="formContainer">
             <div className="socialMedia">
               <a href="https://github.com/ElianeV" target="_blank">
-                <i class="fa fa-github-square"></i>
+                <i className="fa fa-github-square"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/eliane-van-der-cruyssen/"
                 target="_blank"
               >
-                <i class="fa fa-linkedin-square"></i>
+                <i className="fa fa-linkedin-square"></i>
               </a>
             </div>
             <form name="Contact Form" method="POST" data-netlify="true">
@@ -214,7 +214,7 @@ function App() {
                   placeholder="NAME"
                   required
                 />
-                <span class="focusBorder"></span>
+                <span className="focusBorder"></span>
               </div>
               <div className="inputDiv">
                 <input
@@ -224,7 +224,7 @@ function App() {
                   placeholder="EMAIL"
                   required
                 />
-                <span class="focusBorder"></span>
+                <span className="focusBorder"></span>
               </div>
               <div className="inputDiv">
                 <textarea
@@ -234,7 +234,7 @@ function App() {
                   required
                   rows={4}
                 ></textarea>
-                <span class="focusBorder"></span>
+                <span className="focusBorder"></span>
               </div>
               <button type="submit" className="button">
                 SUBMIT
