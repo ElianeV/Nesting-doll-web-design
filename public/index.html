@@ -17,11 +17,11 @@
     <title>Eliane codes</title>
   </head>
   <body>
-    <form name="Contact Form" netlify hidden>
+    <form name="Contact Form" netlify hidden data-netlify-recaptcha="true">
       <input type="text" name="name" required />
       <input type="email" name="email" required />
       <textarea name="message" required></textarea>
-      <div type="hidden" name="recaptcha" data-netlify-recaptcha="true"></div>
+      <div data-netlify-recaptcha="true"></div>
       <button type="submit">Submit</button>
     </form>
     <div id="root"></div>

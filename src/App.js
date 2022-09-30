@@ -192,7 +192,12 @@ function App() {
       </div>
       <div style={{ width: "100vw", height: "100vh" }}>
         <div id="Contact" className="FullScreen Contact">
-          <form name="Contact Form" method="POST" data-netlify="true">
+          <form
+            name="Contact Form"
+            method="POST"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
             <input type="hidden" name="form-name" value="Contact Form" />
             <div className="inputDiv">
               <input
@@ -224,11 +229,7 @@ function App() {
               ></textarea>
               <span class="focusBorder"></span>
             </div>
-            <div
-              type="hidden"
-              name="recaptcha"
-              data-netlify-recaptcha="true"
-            ></div>
+            <div data-netlify-recaptcha="true"></div>
             <button type="submit" className="button">
               SUBMIT
             </button>
