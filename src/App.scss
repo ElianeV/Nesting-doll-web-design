@@ -233,7 +233,7 @@ nav {
     h3 {
       font-size: 1rem;
       padding-bottom: 10px;
-      font-weight: 100;
+      font-weight: 300;
     }
     p {
       color: red;
@@ -392,6 +392,46 @@ nav {
         margin: 0 auto;
       }
 
+      .Mystery {
+        height: 120px;
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .Projects {
+    height: 2000px;
+    .AllProjects {
+      height: 2000px;
+      .Description {
+        width: 350px;
+        height: 250px;
+        padding: 0;
+        h2 {
+          font-size: 1.5rem;
+        }
+        p {
+          word-spacing: 10px;
+          font-size: 0.6rem;
+        }
+      }
+      .DescriptionSmall {
+        display: block;
+      }
+      .ProjCoverTop,
+      .ProjCoverBottom {
+        display: none;
+      }
+      #Proj1,
+      #Proj2 {
+        margin: 0 auto 200px auto;
+      }
+      #Proj3 {
+        margin: 0 auto;
+      }
       .Mystery {
         height: 120px;
         h3 {
