@@ -21,7 +21,7 @@ function App() {
     setIsHovered(true);
     setProjTitle("BENDY CANDLE");
     setProjDescription(
-      "Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's all hands-free!"
+      "Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's completely hands-free!"
     );
     setProjSoftware("HTML CSS/SASS Javascript React ");
     setGithubLink(
