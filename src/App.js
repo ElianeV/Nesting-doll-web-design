@@ -37,7 +37,7 @@ function App() {
     setIsHovered2(true);
     setProjTitle("OUT BOULDERING");
     setProjDescription(
-      "Check the weather in Ireland to see which outdoor bouldering areas are ideal to visit."
+      "The weather in Ireland is changeable and it often rains which is not ideal if you want to go outdoor bouldering. Using the OpenWeatherMap API we provide the 4 day weather forecast for the most popular bouldering locations in the country. Get a swift overview and plan your perfect climbing trip."
     );
     setProjSoftware("HTML CSS/SASS Javascript React ");
     setGithubLink(
@@ -104,6 +104,22 @@ function App() {
           </p>
         </div>
         <div className="AllProjects">
+          <div className="Description DescriptionSmall">
+            <h2>BENDY CANDLE</h2>
+            <h3>
+              Bendy Candle allows you to create a custom flexibility routine.
+              Edit individual exercises and their duration to make stretching
+              more or less challenging. Once you are satisfied with your routine
+              you can start the automatic countdown. Follow the visual and
+              auditory cues to switch positions. It's completely hands-free!
+            </h3>
+            <p>
+              HTML CSS/SASS Javascript React {""}
+              <a href="https://github.com/ElianeV/Bendy-Candle" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
           <div
             id="Proj1"
             className="Project"
@@ -131,10 +147,26 @@ function App() {
               <img src={ProjBottomLeft} />
             </div>
           </div>
+          <div className="Description DescriptionSmall">
+            <h2>OUT BOULDERING</h2>
+            <h3>
+              The weather in Ireland is changeable and it often rains which is
+              not ideal if you want to go outdoor bouldering. Using the
+              OpenWeatherMap API we provide the 4 day weather forecast for the
+              most popular bouldering locations in the country. Get a swift
+              overview and plan your perfect climbing trip.
+            </h3>
+            <p>
+              HTML CSS/SASS Javascript React {""}
+              <a href="https://github.com/ElianeV/Bouldering" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
+          </div>
           <div
             id="Proj2"
             className="Project"
-            onClick={() => window.open("#")}
+            onClick={() => window.open("https://outbouldering.netlify.app")}
             onMouseEnter={splitCover2}
             onMouseLeave={joinCover2}
             style={{ cursor: "pointer" }}
@@ -157,6 +189,16 @@ function App() {
             >
               <img src={ProjBottomLeft} />
             </div>
+          </div>
+          <div className="Description DescriptionSmall">
+            <h2>MYSTERY PROJECT</h2>
+            <h3>This mystery project is still in the making.</h3>
+            <p>
+              N/A N/A N/A N/A {""}
+              <a href="#" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </p>
           </div>
           <div
             id="Proj3"

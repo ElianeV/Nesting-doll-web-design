@@ -254,6 +254,9 @@ nav {
     padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
+    .DescriptionSmall {
+      display: none;
+    }
     .Project {
       min-width: 250px;
       height: 250px;
@@ -344,6 +347,11 @@ nav {
       left: 77px;
     }
   }
+}
+
+// Responsive
+
+@media screen and (max-width: 755px) {
 }
 
 // CONTACT
