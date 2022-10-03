@@ -190,7 +190,7 @@ function App() {
               <img src={ProjBottomLeft} />
             </div>
           </div>
-          <div className="Description DescriptionSmall">
+          <div className="Description DescriptionSmall Mystery">
             <h2>MYSTERY PROJECT</h2>
             <h3>This mystery project is still in the making.</h3>
             <p>

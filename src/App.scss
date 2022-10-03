@@ -354,29 +354,49 @@ nav {
 @media screen and (max-width: 755px) {
   .Projects {
     width: 100vw;
-    height: 2000px;
+    height: 1670px;
     .DescriptionBig {
       display: none;
     }
-
     .AllProjects {
       width: 100vw;
-      height: 1500px;
-      margin-top: 20px;
+      height: 1660px;
+      margin-top: 40px;
+      margin-bottom: 0;
+      padding: 0;
       flex-direction: column;
+      justify-content: flex-start;
       .Description {
         padding: 0;
-        margin: auto;
+        padding-bottom: 20px;
+        margin: 0 auto;
         width: 400px;
+        h2,
+        p {
+          text-align: center;
+        }
       }
       .DescriptionSmall {
         display: block;
       }
-      .ProjCoverTop {
-        display: none;
-      }
+      .ProjCoverTop,
       .ProjCoverBottom {
         display: none;
+      }
+      #Proj1,
+      #Proj2 {
+        margin: 0 auto;
+        margin-bottom: 100px;
+      }
+      #Proj3 {
+        margin: 0 auto;
+      }
+
+      .Mystery {
+        height: 120px;
+        h3 {
+          text-align: center;
+        }
       }
     }
   }
