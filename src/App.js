@@ -66,183 +66,178 @@ function App() {
 
   return (
     <>
-      <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="Home" className="FullScreen Intro">
-          <nav>
-            <ul>
-              <li>
-                <a href="#Home">HOME</a>
-              </li>
-              <li>
-                <a href="#Projects">PROJECTS</a>
-              </li>
-              <li>
-                <a href="#Contact">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
+      <div id="Home" className="FullScreen Intro">
+        <nav>
+          <ul>
+            <li>
+              <a href="#Home">HOME</a>
+            </li>
+            <li>
+              <a href="#Projects">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#Contact">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div className="centerImage">
           <div className="NestingDoll">
-            <img src={NestingDoll} alt="nestingdoll" />
-          </div>
-          <div className="Eyebrows">
-            <img id="BigEyebrow" src={BigEyebrow} alt="eyebrow" />
-            <img id="MidEyebrow" src={BigEyebrow} alt="eyebrow" />
-            <img id="SmallEyebrow" src={BigEyebrow} alt="eyebrow" />
+            <div className="Eyebrows">
+              <img id="BigEyebrow" src={BigEyebrow} alt="eyebrow" />
+              <img id="MidEyebrow" src={BigEyebrow} alt="eyebrow" />
+              <img id="SmallEyebrow" src={BigEyebrow} alt="eyebrow" />
+            </div>
           </div>
           <div className="Signature">
             <img id="Signature" src={Signature} alt="signature" />
-            <p id="WebDev"> WEB DEVELOPMENT</p>
+            <div id="WebDev"> WEB DEVELOPMENT</div>
           </div>
         </div>
       </div>
-      <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="Projects" className="FullScreen Projects">
-          <div className="Description">
-            <h2>{projTitle}</h2>
-            <h3>{projDescription}</h3>
-            <p>
-              {projSoftware}
-              {gitHubLink}
-            </p>
+      {/* <div id="Projects" className="FullScreen Projects">
+        <div className="Description">
+          <h2>{projTitle}</h2>
+          <h3>{projDescription}</h3>
+          <p>
+            {projSoftware}
+            {gitHubLink}
+          </p>
+        </div>
+        <div className="AllProjects">
+          <div
+            id="Proj1"
+            className="Project"
+            onClick={() => window.open("https://www.bendycandle.com")}
+            onMouseEnter={splitCover}
+            onMouseLeave={joinCover}
+            style={{ cursor: "pointer" }}
+          >
+            <div
+              className={
+                isHovered
+                  ? "ProjCoverTop Proj1 AnimatedTop"
+                  : "ProjCoverTop Proj1"
+              }
+            >
+              <img src={ProjTopLeft} />
+            </div>
+            <div
+              className={
+                isHovered
+                  ? "ProjCoverBottom Proj1 AnimatedBottom"
+                  : "ProjCoverBottom Proj1"
+              }
+            >
+              <img src={ProjBottomLeft} />
+            </div>
           </div>
-          <div className="AllProjects">
+          <div
+            id="Proj2"
+            className="Project"
+            onClick={() => window.open("#")}
+            onMouseEnter={splitCover2}
+            onMouseLeave={joinCover2}
+            style={{ cursor: "pointer" }}
+          >
             <div
-              id="Proj1"
-              className="Project"
-              onClick={() => window.open("https://www.bendycandle.com")}
-              onMouseEnter={splitCover}
-              onMouseLeave={joinCover}
-              style={{ cursor: "pointer" }}
+              className={
+                isHovered2
+                  ? "ProjCoverTop Proj2 AnimatedTop"
+                  : "ProjCoverTop Proj2"
+              }
             >
-              <div
-                className={
-                  isHovered
-                    ? "ProjCoverTop Proj1 AnimatedTop"
-                    : "ProjCoverTop Proj1"
-                }
-              >
-                <img src={ProjTopLeft} />
-              </div>
-              <div
-                className={
-                  isHovered
-                    ? "ProjCoverBottom Proj1 AnimatedBottom"
-                    : "ProjCoverBottom Proj1"
-                }
-              >
-                <img src={ProjBottomLeft} />
-              </div>
+              <img src={ProjTopLeft} />
             </div>
             <div
-              id="Proj2"
-              className="Project"
-              onClick={() => window.open("#")}
-              onMouseEnter={splitCover2}
-              onMouseLeave={joinCover2}
-              style={{ cursor: "pointer" }}
+              className={
+                isHovered2
+                  ? "ProjCoverBottom Proj2 AnimatedBottom"
+                  : "ProjCoverBottom Proj2"
+              }
             >
-              <div
-                className={
-                  isHovered2
-                    ? "ProjCoverTop Proj2 AnimatedTop"
-                    : "ProjCoverTop Proj2"
-                }
-              >
-                <img src={ProjTopLeft} />
-              </div>
-              <div
-                className={
-                  isHovered2
-                    ? "ProjCoverBottom Proj2 AnimatedBottom"
-                    : "ProjCoverBottom Proj2"
-                }
-              >
-                <img src={ProjBottomLeft} />
-              </div>
+              <img src={ProjBottomLeft} />
+            </div>
+          </div>
+          <div
+            id="Proj3"
+            className="Project"
+            onClick={() => window.open("#")}
+            onMouseEnter={splitCover3}
+            onMouseLeave={joinCover3}
+            style={{ cursor: "pointer" }}
+          >
+            <div
+              className={
+                isHovered3
+                  ? "ProjCoverTop Proj3 AnimatedTop"
+                  : "ProjCoverTop Proj3"
+              }
+            >
+              <img src={ProjTopRight} />
             </div>
             <div
-              id="Proj3"
-              className="Project"
-              onClick={() => window.open("#")}
-              onMouseEnter={splitCover3}
-              onMouseLeave={joinCover3}
-              style={{ cursor: "pointer" }}
+              className={
+                isHovered3
+                  ? "ProjCoverBottom Proj3 AnimatedBottom"
+                  : "ProjCoverBottom Proj3"
+              }
             >
-              <div
-                className={
-                  isHovered3
-                    ? "ProjCoverTop Proj3 AnimatedTop"
-                    : "ProjCoverTop Proj3"
-                }
-              >
-                <img src={ProjTopRight} />
-              </div>
-              <div
-                className={
-                  isHovered3
-                    ? "ProjCoverBottom Proj3 AnimatedBottom"
-                    : "ProjCoverBottom Proj3"
-                }
-              >
-                <img src={ProjBottomRight} />
-              </div>
+              <img src={ProjBottomRight} />
             </div>
           </div>
         </div>
       </div>
-      <div style={{ width: "100vw", height: "100vh" }}>
-        <div id="Contact" className="FullScreen Contact">
-          <div className="formContainer">
-            <div className="socialMedia">
-              <a href="https://github.com/ElianeV" target="_blank">
-                <i className="fa fa-github-square"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/eliane-van-der-cruyssen/"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin-square"></i>
-              </a>
-            </div>
-            <form name="Contact Form" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="Contact Form" />
-              <div className="inputDiv">
-                <input
-                  type="text"
-                  name="name"
-                  className="underlineEffect"
-                  placeholder="NAME"
-                  required
-                />
-                <span className="focusBorder"></span>
-              </div>
-              <div className="inputDiv">
-                <input
-                  type="email"
-                  name="email"
-                  className="underlineEffect"
-                  placeholder="EMAIL"
-                  required
-                />
-                <span className="focusBorder"></span>
-              </div>
-              <div className="inputDiv">
-                <textarea
-                  name="message"
-                  className="underlineEffect2"
-                  placeholder="MESSAGE"
-                  required
-                  rows={4}
-                ></textarea>
-                <span className="focusBorder"></span>
-              </div>
-              <button type="submit" className="button">
-                SUBMIT
-              </button>
-            </form>
+      <div id="Contact" className="FullScreen Contact">
+        <div className="formContainer">
+          <div className="socialMedia">
+            <a href="https://github.com/ElianeV" target="_blank">
+              <i className="fa fa-github-square"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/eliane-van-der-cruyssen/"
+              target="_blank"
+            >
+              <i className="fa fa-linkedin-square"></i>
+            </a>
           </div>
+          <form name="Contact Form" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="Contact Form" />
+            <div className="inputDiv">
+              <input
+                type="text"
+                name="name"
+                className="underlineEffect"
+                placeholder="NAME"
+                required
+              />
+              <span className="focusBorder"></span>
+            </div>
+            <div className="inputDiv">
+              <input
+                type="email"
+                name="email"
+                className="underlineEffect"
+                placeholder="EMAIL"
+                required
+              />
+              <span className="focusBorder"></span>
+            </div>
+            <div className="inputDiv">
+              <textarea
+                name="message"
+                className="underlineEffect2"
+                placeholder="MESSAGE"
+                required
+                rows={4}
+              ></textarea>
+              <span className="focusBorder"></span>
+            </div>
+            <button type="submit" className="button">
+              SUBMIT
+            </button>
+          </form>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

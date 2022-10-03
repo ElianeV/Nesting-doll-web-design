@@ -43,122 +43,162 @@ nav {
 
 .Intro {
   background-color: black;
-  .NestingDoll {
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    padding-top: 40px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .Eyebrows {
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    position: relative;
-    top: -400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .centerImage {
+    width: 600px;
+    height: 500px;
+    .NestingDoll {
+      width: 400px;
+      height: 400px;
+      margin: auto;
+      background-image: url(./images/NestingDoll.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      .Eyebrows {
+        width: 400px;
+        height: 400px;
+        margin: auto;
 
-    #BigEyebrow {
-      width: 45px;
-      position: absolute;
-      top: 78px;
-      left: 126px;
-      animation: 5s linear raiseBrow1 infinite;
-      animation-delay: 1s;
-      @keyframes raiseBrow1 {
-        0% {
-          transform: translateY(0px);
+        #BigEyebrow {
+          width: 45px;
+          position: relative;
+          top: 70px;
+          left: 126px;
+          animation: 5s linear raiseBrow1 infinite;
+          animation-delay: 1s;
+          @keyframes raiseBrow1 {
+            0% {
+              transform: translateY(0px);
+            }
+            5% {
+              transform: translateY(-10px);
+            }
+            10% {
+              transform: translateY(-5px);
+            }
+            15% {
+              transform: translateY(-10px);
+            }
+            20% {
+              transform: translateY(0px);
+            }
+          }
         }
-        5% {
-          transform: translateY(-10px);
+        #MidEyebrow {
+          width: 40px;
+          position: relative;
+          top: 135px;
+          left: 202px;
+          animation: 5s linear raiseBrow2 infinite;
+          animation-delay: 2s;
+          @keyframes raiseBrow2 {
+            0% {
+              transform: translateY(0px);
+            }
+            5% {
+              transform: translateY(-8px);
+            }
+            10% {
+              transform: translateY(0px);
+            }
+          }
         }
-        10% {
-          transform: translateY(-5px);
-        }
-        15% {
-          transform: translateY(-10px);
-        }
-        20% {
-          transform: translateY(0px);
+        #SmallEyebrow {
+          width: 30px;
+          position: relative;
+          top: 200px;
+          left: 253.5px;
+          animation: 5s linear raiseBrow3 infinite;
+          animation-delay: 3s;
+          @keyframes raiseBrow3 {
+            0% {
+              transform: translateY(0px);
+            }
+            10% {
+              transform: translateY(-4px);
+            }
+            20% {
+              transform: translateY(-4px);
+            }
+            30% {
+              transform: translateY(0px);
+            }
+          }
         }
       }
     }
-    #MidEyebrow {
-      width: 40px;
-      position: absolute;
-      top: 142px;
-      left: 248px;
-      animation: 5s linear raiseBrow2 infinite;
-      animation-delay: 2s;
-      @keyframes raiseBrow2 {
-        0% {
-          transform: translateY(0px);
-        }
-        5% {
-          transform: translateY(-8px);
-        }
-        10% {
-          transform: translateY(0px);
-        }
-      }
-    }
-    #SmallEyebrow {
-      width: 30px;
-      position: absolute;
-      top: 209px;
-      left: 339px;
-      animation: 5s linear raiseBrow3 infinite;
-      animation-delay: 3s;
-      @keyframes raiseBrow3 {
-        0% {
-          transform: translateY(0px);
-        }
-        10% {
-          transform: translateY(-4px);
-        }
-        20% {
-          transform: translateY(-4px);
-        }
-        30% {
-          transform: translateY(0px);
-        }
-      }
-    }
-  }
-  .Signature {
-    width: 320px;
-    margin: auto;
-    position: relative;
-    top: -500px;
-    left: -200px;
-    #Signature,
-    #WebDev {
+    .Signature {
       width: 100%;
-      height: 100%;
-      animation: 4s ease appear forwards;
-      @keyframes appear {
-        0% {
-          opacity: 0;
-        }
-        80% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
+      height: 180px;
+      position: relative;
+      top: -80px;
+      #Signature {
+        height: 100%;
+      }
+      #WebDev {
+        font-size: 15px;
+        color: red;
+        display: inline-block;
+        position: relative;
+        top: -86px;
+        left: 130px;
+      }
+      #Signature,
+      #WebDev {
+        animation: 4s ease appear forwards;
+        @keyframes appear {
+          0% {
+            opacity: 0;
+          }
+          80% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
       }
-    }
-    #WebDev {
-      font-size: 15px;
-      color: red;
-      position: relative;
-      top: -135px;
-      left: 400px;
     }
   }
 }
+
+// Responsive
+// .Intro {
+//   @media screen and (max-width: 650px) {
+//     .Signature {
+//       width: 200px;
+//       position: relative;
+//       top: -500px;
+//       left: -200px;
+//       #Signature,
+//       #WebDev {
+//         width: 100%;
+//         height: 100%;
+//         animation: 4s ease appear forwards;
+//         @keyframes appear {
+//           0% {
+//             opacity: 0;
+//           }
+//           80% {
+//             opacity: 0;
+//           }
+//           100% {
+//             opacity: 1;
+//           }
+//         }
+//       }
+//       #WebDev {
+//         font-size: 15px;
+//         color: red;
+//         position: relative;
+//         top: -135px;
+//         left: 400px;
+//       }
+//     }
+//   }
+// }
 
 // PROJECTS
 
@@ -342,7 +382,7 @@ nav {
         width: 100%;
       }
       ::placeholder {
-        color: $lightgrey
+        color: $lightgrey;
       }
       .underlineEffect ~ .focusBorder {
         position: absolute;
