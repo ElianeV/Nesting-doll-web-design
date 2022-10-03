@@ -95,7 +95,7 @@ function App() {
         </div>
       </div>
       <div id="Projects" className="FullScreen Projects">
-        <div className="Description">
+        <div className="Description DescriptionBig">
           <h2>{projTitle}</h2>
           <h3>{projDescription}</h3>
           <p>

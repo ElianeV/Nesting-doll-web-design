@@ -258,7 +258,7 @@ nav {
       display: none;
     }
     .Project {
-      min-width: 250px;
+      width: 250px;
       height: 250px;
       border-radius: 50%;
     }
@@ -352,6 +352,34 @@ nav {
 // Responsive
 
 @media screen and (max-width: 755px) {
+  .Projects {
+    width: 100vw;
+    height: 2000px;
+    .DescriptionBig {
+      display: none;
+    }
+
+    .AllProjects {
+      width: 100vw;
+      height: 1500px;
+      margin-top: 20px;
+      flex-direction: column;
+      .Description {
+        padding: 0;
+        margin: auto;
+        width: 400px;
+      }
+      .DescriptionSmall {
+        display: block;
+      }
+      .ProjCoverTop {
+        display: none;
+      }
+      .ProjCoverBottom {
+        display: none;
+      }
+    }
+  }
 }
 
 // CONTACT
