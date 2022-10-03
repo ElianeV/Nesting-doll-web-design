@@ -216,21 +216,24 @@ nav {
 
 .Projects {
   background-color: #fddf19;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .Description {
     width: 450px;
-    height: 270px;
-    margin: 0px auto auto 100px;
-    padding-top: 50px;
+    height: 220px;
+    margin-left: 100px;
+    padding-top: 40px;
     text-align: justify;
 
     h2 {
-      font-size: 40px;
-      padding-bottom: 20px;
-      animation: 1s ease appear2 forwards;
+      font-size: 2rem;
+      padding-bottom: 15px;
     }
     h3 {
-      padding-bottom: 20px;
-      animation-delay: 1s;
+      font-size: 1rem;
+      padding-bottom: 10px;
+      font-weight: 100;
     }
     p {
       color: red;
@@ -248,6 +251,7 @@ nav {
   .AllProjects {
     width: 100%;
     height: 250px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
     .Project {

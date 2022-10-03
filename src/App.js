@@ -21,7 +21,7 @@ function App() {
     setIsHovered(true);
     setProjTitle("BENDY CANDLE");
     setProjDescription(
-      "An app created to improve your flexibility. It allows you to create custom stretch routines and runs an automatic countdown."
+      "Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's all hands-free!"
     );
     setProjSoftware("HTML CSS/SASS Javascript React ");
     setGithubLink(
@@ -94,7 +94,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div id="Projects" className="FullScreen Projects">
+      <div id="Projects" className="FullScreen Projects">
         <div className="Description">
           <h2>{projTitle}</h2>
           <h3>{projDescription}</h3>
@@ -187,7 +187,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="Contact" className="FullScreen Contact">
+      {/* <div id="Contact" className="FullScreen Contact">
         <div className="formContainer">
           <div className="socialMedia">
             <a href="https://github.com/ElianeV" target="_blank">
