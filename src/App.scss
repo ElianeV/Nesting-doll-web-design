@@ -449,7 +449,7 @@ nav {
   .formContainer {
     margin: auto;
     box-sizing: border-box;
-    width: 40vw;
+    width: 500px;
     .socialMedia {
       margin: 100px 0 0 0;
       width: 72px;
@@ -467,7 +467,7 @@ nav {
       color: $yellow;
     }
     form {
-      width: 40vw;
+      width: 500px;
       height: 550px;
       box-sizing: border-box;
       position: relative;
@@ -483,7 +483,7 @@ nav {
         padding: 7px 0;
         border-bottom: 2px solid $lightgrey;
         background-color: black;
-        color: $lightgrey;
+        color: $yellow;
         font-size: 18px;
       }
       input:focus {
@@ -554,8 +554,29 @@ nav {
     }
   }
 }
+// Responsive
+@media screen and (max-width: 550px) {
+  .Contact {
+    .formContainer {
+      width: 90vw;
+      form {
+        width: 90vw;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus input:-webkit-autofill,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus {
+        border-bottom: 2px solid $lightgrey;
+        -webkit-text-fill-color: $yellow;
+        -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+  }
+}
 
-/* ANIMATIONS PROJECT COVERS */
+// ANIMATIONS PROJECT COVERS
 .ProjCoverTop.Proj1.AnimatedTop {
   animation: 1s ease slideToTop forwards;
 }
@@ -574,7 +595,6 @@ nav {
 .ProjCoverBottom.Proj3.AnimatedBottom {
   animation: 1s ease slideToBottom forwards;
 }
-
 @keyframes slideToTop {
   0% {
     transform: translateY(0px);
@@ -601,5 +621,3 @@ nav {
     opacity: 0;
   }
 }
-
-/* CONTACT */

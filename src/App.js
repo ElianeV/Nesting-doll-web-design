@@ -116,7 +116,7 @@ function App() {
             <p>
               HTML CSS/SASS Javascript React {""}
               <a href="https://github.com/ElianeV/Bendy-Candle" target="_blank">
-                <i class="fa fa-github"></i>
+                <i className="fa fa-github"></i>
               </a>
             </p>
           </div>
@@ -159,7 +159,7 @@ function App() {
             <p>
               HTML CSS/SASS Javascript React {""}
               <a href="https://github.com/ElianeV/Bouldering" target="_blank">
-                <i class="fa fa-github"></i>
+                <i className="fa fa-github"></i>
               </a>
             </p>
           </div>
@@ -196,7 +196,7 @@ function App() {
             <p>
               N/A N/A N/A N/A {""}
               <a href="#" target="_blank">
-                <i class="fa fa-github"></i>
+                <i className="fa fa-github"></i>
               </a>
             </p>
           </div>
@@ -229,7 +229,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div id="Contact" className="FullScreen Contact">
+      <div id="Contact" className="FullScreen Contact">
         <div className="formContainer">
           <div className="socialMedia">
             <a href="https://github.com/ElianeV" target="_blank">
@@ -279,7 +279,7 @@ function App() {
             </button>
           </form>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
