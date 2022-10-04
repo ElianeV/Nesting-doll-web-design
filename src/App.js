@@ -26,7 +26,7 @@ function App() {
     setProjSoftware("HTML CSS/SASS Javascript React ");
     setGithubLink(
       <a href="https://github.com/ElianeV/Bendy-Candle" target="_blank">
-        <i class="fa fa-github"></i>
+        <i className="fa fa-github"></i>
       </a>
     );
   };
@@ -42,7 +42,7 @@ function App() {
     setProjSoftware("HTML CSS/SASS Javascript React ");
     setGithubLink(
       <a href="https://github.com/ElianeV/Bouldering" target="_blank">
-        <i class="fa fa-github"></i>
+        <i className="fa fa-github"></i>
       </a>
     );
   };
@@ -56,7 +56,7 @@ function App() {
     setProjSoftware("N/A N/A N/A N/A N/A ");
     setGithubLink(
       <a href="#" target="_blank">
-        <i class="fa fa-github"></i>
+        <i className="fa fa-github"></i>
       </a>
     );
   };
