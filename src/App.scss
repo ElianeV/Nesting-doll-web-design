@@ -555,12 +555,10 @@ nav {
   }
 }
 // Responsive
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 250px) {
   .Contact {
     .formContainer {
-      width: 90vw;
       form {
-        width: 90vw;
       }
       input:-webkit-autofill,
       input:-webkit-autofill:hover,
@@ -571,6 +569,16 @@ nav {
         -webkit-text-fill-color: $yellow;
         -webkit-box-shadow: 0 0 0px 1000px #000 inset;
         transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .Contact {
+    .formContainer {
+      width: 90vw;
+      form {
+        width: 90vw;
       }
     }
   }
