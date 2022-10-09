@@ -51,11 +51,13 @@ function App() {
   };
   const splitCover3 = () => {
     setIsHovered3(true);
-    setProjTitle("MYSTERY PROJECT");
-    setProjDescription("This mystery project is still in the making.");
-    setProjSoftware("N/A N/A N/A N/A N/A ");
+    setProjTitle("HABIT TRACKER");
+    setProjDescription(
+      "A full-stack app used to track your daily habits. This project is still under development"
+    );
+    setProjSoftware("Tailwind Typescript Next.js Prisma PlanetScale");
     setGithubLink(
-      <a href="#" target="_blank">
+      <a href="https://github.com/ElianeV/habit-tracker" target="_blank">
         <i className="fa fa-github"></i>
       </a>
     );
