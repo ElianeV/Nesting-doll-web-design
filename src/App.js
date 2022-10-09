@@ -53,9 +53,9 @@ function App() {
     setIsHovered3(true);
     setProjTitle("HABIT TRACKER");
     setProjDescription(
-      "A full-stack app used to track your daily habits. This project is still under development"
+      "A full-stack app used to track your daily habits. This project is still under development."
     );
-    setProjSoftware("Tailwind Typescript Next.js Prisma PlanetScale");
+    setProjSoftware("Tailwind Typescript Next Prisma PlanetScale ");
     setGithubLink(
       <a href="https://github.com/ElianeV/habit-tracker" target="_blank">
         <i className="fa fa-github"></i>
