@@ -193,11 +193,17 @@ function App() {
             </div>
           </div>
           <div className="Description DescriptionSmall Mystery">
-            <h2>MYSTERY PROJECT</h2>
-            <h3>This mystery project is still in the making.</h3>
+            <h2>HABIT TRACKER</h2>
+            <h3>
+              A full-stack app used to track your daily habits. This project is
+              still under development.
+            </h3>
             <p>
-              N/A N/A N/A N/A {""}
-              <a href="#" target="_blank">
+              Tailwind Typescript Next Prisma PlanetScale {""}
+              <a
+                href="https://github.com/ElianeV/habit-tracker"
+                target="_blank"
+              >
                 <i className="fa fa-github"></i>
               </a>
             </p>
