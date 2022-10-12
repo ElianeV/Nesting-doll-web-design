@@ -1,7 +1,6 @@
 import "./App.scss";
 import React, { useState } from "react";
 import BigEyebrow from "./images/BigEyebrow.png";
-import NestingDoll from "./images/NestingDoll.png";
 import Signature from "./images/Signature.png";
 import ProjTopLeft from "./images/ProjTopLeft.png";
 import ProjBottomLeft from "./images/ProjBottomLeft.png";
@@ -51,11 +50,11 @@ function App() {
   };
   const splitCover3 = () => {
     setIsHovered3(true);
-    setProjTitle("HABIT TRACKER");
+    setProjTitle("DAILY DOSE");
     setProjDescription(
-      "A full-stack app used to track your daily habits. This project is still under development."
+      "Track your daily habits using the Daily Dose full-stack app. This project is still under development but the website is live."
     );
-    setProjSoftware("Tailwind Typescript Next Prisma PlanetScale ");
+    setProjSoftware("Tailwind Typescript Next Prisma Vercel ");
     setGithubLink(
       <a href="https://github.com/ElianeV/habit-tracker" target="_blank">
         <i className="fa fa-github"></i>
@@ -192,14 +191,14 @@ function App() {
               <img src={ProjBottomLeft} />
             </div>
           </div>
-          <div className="Description DescriptionSmall Mystery">
-            <h2>HABIT TRACKER</h2>
+          <div className="Description DescriptionSmall">
+            <h2>DAILY DOSE</h2>
             <h3>
-              A full-stack app used to track your daily habits. This project is
-              still under development.
+              Track your daily habits using the Daily Dose full-stack app. This
+              project is still under development but the website is live.
             </h3>
             <p>
-              Tailwind Typescript Next Prisma PlanetScale {""}
+              Tailwind Typescript Next Prisma Vercel {""}
               <a
                 href="https://github.com/ElianeV/habit-tracker"
                 target="_blank"
@@ -211,7 +210,7 @@ function App() {
           <div
             id="Proj3"
             className="Project"
-            onClick={() => window.open("#")}
+            onClick={() => window.open("https://habit-tracker-two.vercel.app")}
             onMouseEnter={splitCover3}
             onMouseLeave={joinCover3}
             style={{ cursor: "pointer" }}
