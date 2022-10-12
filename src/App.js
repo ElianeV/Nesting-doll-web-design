@@ -210,7 +210,9 @@ function App() {
           <div
             id="Proj3"
             className="Project"
-            onClick={() => window.open("https://habit-tracker-two.vercel.app")}
+            onClick={() =>
+              window.open("https://habit-tracker-two.vercel.app/habitmanager")
+            }
             onMouseEnter={splitCover3}
             onMouseLeave={joinCover3}
             style={{ cursor: "pointer" }}
