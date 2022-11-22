@@ -82,13 +82,6 @@ function App() {
           </ul>
         </nav>
         <div className="centerImage">
-          <div className="NestingDoll">
-            <div className="Eyebrows">
-              <img id="BigEyebrow" src={BigEyebrow} alt="eyebrow" />
-              <img id="MidEyebrow" src={BigEyebrow} alt="eyebrow" />
-              <img id="SmallEyebrow" src={BigEyebrow} alt="eyebrow" />
-            </div>
-          </div>
           <div className="Signature">
             <img id="Signature" src={Signature} alt="signature" />
             <div id="WebDev"> WEB DEVELOPMENT</div>
